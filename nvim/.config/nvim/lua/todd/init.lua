@@ -1,0 +1,7 @@
+require("todd.remap")
+require("todd.set")
+require("custom.lazy")
+require("todd.telescope")
+require("todd.treesitter")
+require("todd.lsp")
+print("Hi Todd  Don't forget to occasionally run Mason, TSUpdate and  Lazy")

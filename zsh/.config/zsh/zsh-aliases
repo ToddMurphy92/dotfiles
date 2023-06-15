@@ -1,0 +1,37 @@
+# Quickly reload zsh config
+alias src='source ~/.zshrc'
+
+# Editor
+alias nv=nvim
+
+# List files
+alias ls='ls --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Git
+alias g='git'
+alias ga='git add'
+alias gs='git status'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias gpush='git push'
+alias gd='git diff'
+
+# Grep
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# Docker
+alias dcu='docker compose up -d'
+alias dcuf='docker compose up -d --force-recreate'
+alias dcl='docker compose logs'
+alias dcr='docker compose restart'
+alias ds='docker container stats'
+alias dps='docker ps'
+alias dpsg='docker ps | grep'
+
+# Terraform
+alias tf='terraform'
