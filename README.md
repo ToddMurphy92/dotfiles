@@ -3,7 +3,7 @@ Managed with stow.
 Currently just for my Macbook but should also work on Linux.
 Still new to stow but liking it so far, if I decide to stick to it and move my Linux server to this method of dotfile management then I'll flesh this README out a bit more.
 
-# Install stow on with homebrew
+# Install stow with homebrew
 `brew install stow`
 
 # Stow usage
