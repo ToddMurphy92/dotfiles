@@ -1,0 +1,8 @@
+# Layout type
+yabai -m config layout bsp
+
+# Float Windows
+yabai -m rule --add app=Finder manage=off
+yabai -m rule --add app=System Preferences manage=off
+yabai -m rule --add app=System\ Preferences manage=off
+yabai -m rule --add app=Calculator manage=off
