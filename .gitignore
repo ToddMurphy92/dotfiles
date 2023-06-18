@@ -1,4 +1,5 @@
 .gitconfig
+.DS_Store
 
 # neovim
 nvim/.config/nvim/.init.lua.un~
