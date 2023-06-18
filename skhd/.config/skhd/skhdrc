@@ -1,4 +1,4 @@
-# Some ideas stolen from here: https://github.com/julian-heng/yabai-config/blob/master/skhdrc
+# Some great ideas stolen from here: https://github.com/julian-heng/yabai-config/blob/master/skhdrc
 
 # To make sure changes apply run:
 # `skhd --reload`
