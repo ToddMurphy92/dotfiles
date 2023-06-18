@@ -1,4 +1,8 @@
 -- [[ Configure Telescope ]]
+local set = vim.keymap.set
+local builtin = require("telescope.builtin")
+local status, telescope = pcall(require, "telescope")
+if (not status) then return end
 -- See `:help telescope` and `:help telescope.setup()`
 require('telescope').setup {
   defaults = {
@@ -34,3 +38,10 @@ vim.keymap.set('n', '<leader>sh', require('telescope.builtin').help_tags, { desc
 vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
 vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
+
+-- File browser mappings
+-- File browser mapping inspo:
+-- https://github.com/fdschmidt93/dotfiles/blob/c4c2dc208e84164e50bece2d033e62468a20eb6f/nvim/.config/nvim/lua/fds/mappings.lua
+set("n", "<leader>fb", function()
+  require("telescope").extensions.file_browser.file_browser()
+end, { silent = true, desc = 'Telescope: [F]ile [B]rowser' })
