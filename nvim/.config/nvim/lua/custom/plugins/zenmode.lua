@@ -9,13 +9,15 @@ return {
 
   config = function()
     vim.keymap.set("n", "<leader>tz", function()
-      require("zen-mode").setup {
-        window = {
-          width = 90,
-          options = {}
-        },
-      }
-      require("zen-mode").toggle()
-    end)
+        require("zen-mode").setup {
+          window = {
+            width = 90,
+            options = {}
+          },
+        }
+        require("zen-mode").toggle()
+      end,
+      { noremap = true, desc = "[T]oggle [Z]en mode" }
+    )
   end
 }

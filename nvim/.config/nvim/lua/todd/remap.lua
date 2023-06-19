@@ -21,7 +21,7 @@ function ToggleColorColumn()
   end
 end
 
-vim.keymap.set('n', '<leader>tc', ':lua ToggleColorColumn()<CR>', { noremap = true, desc = "Toggle colorcolumn" })
+vim.keymap.set('n', '<leader>tc', ':lua ToggleColorColumn()<CR>', { noremap = true, desc = "[T]oggle [C]olorcolumn" })
 
 -- Unmap Q -- Uncommented as neovim has changed the default behaviour it seems
 -- vim.keymap.set("n", "Q", "<nop>")
