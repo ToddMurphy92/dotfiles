@@ -59,7 +59,7 @@ lctrl + alt - l : yabai -m window --resize right:50:0; \
                   yabai -m window --resize left:50:0
 
 # toggle window zoom
-# alt - d : yabai -m window --toggle zoom-parent
+alt - d : yabai -m window --toggle zoom-parent
 alt - f : yabai -m window --toggle zoom-fullscreen
 
 # toggle window split type
