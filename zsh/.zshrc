@@ -32,3 +32,5 @@ source ~/.config/zsh/zsh-exports
 source ~/.config/zsh/zsh-prompt
 # Vim style cursor
 source ~/.config/zsh/zsh-cursor
+# McFly - Replaces ctrl-r history search
+source ~/.config/zsh/zsh-mcfly
