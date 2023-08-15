@@ -1,6 +1,12 @@
 # Quickly reload zsh config
 alias src='source ~/.zshrc'
 
+# AWS
+alias alzip='zip -r lambda-function.zip index.mjs node_modules'
+alias alup='aws lambda update-function-code \
+	--zip-file fileb://lambda-function.zip \
+	--function-name'
+
 # Editor
 alias nv=nvim
 
