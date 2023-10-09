@@ -12,18 +12,19 @@ alias nv=nvim
 
 # List files
 alias ls='ls --color=auto'
-alias ll='ls -alF'
+alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
 
 # Git
 alias g='git'
 alias ga='git add'
-alias gs='git status'
+alias gb='git branch'
 alias gc='git commit'
 alias gcm='git commit -m'
-alias gpush='git push'
 alias gd='git diff'
+alias gpush='git push'
+alias gs='git status'
 
 # Grep
 alias grep='grep --color=auto'
