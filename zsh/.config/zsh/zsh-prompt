@@ -6,6 +6,7 @@ COMMON_PROMPT_SYMBOL="❯"
 # Colors
 COMMON_COLORS_HOST_ME=green
 COMMON_COLORS_HOST_AWS_VAULT=yellow
+COMMON_COLORS_HOST_TF=cyan
 COMMON_COLORS_CURRENT_DIR=blue
 COMMON_COLORS_RETURN_STATUS_TRUE=magenta
 COMMON_COLORS_RETURN_STATUS_FALSE=yellow
@@ -28,6 +29,16 @@ COMMON_COLORS_BG_JOBS=yellow
 # PROMPT='$(common_host)$(common_current_dir)$(common_bg_jobs)$(common_return_status)'
 # RPROMPT='$(common_git_status) $(git_prompt_short_sha)'
 
+if command -v terraform >/dev/null 2>&1; then
+  if [ -f .terraform/environment ]; then
+    IN_TF_DIR=true
+  else
+    IN_TF_DIR=false
+  fi
+else
+  IN_TF_DIR=false
+fi
+
 # Host
 common_host() {
   if [[ -n $SSH_CONNECTION ]]; then
@@ -40,6 +51,12 @@ common_host() {
   fi
   if [[ $AWS_VAULT ]]; then
     echo "%{$fg[$COMMON_COLORS_HOST_AWS_VAULT]%}$AWS_VAULT%{$reset_color%} "
+  fi
+  if [[ $IN_TF_DIR == true ]]; then
+    local workspace=$(terraform workspace show 2>/dev/null)
+    if [[ -n ${workspace} ]]; then
+      echo "%{$fg[$COMMON_COLORS_HOST_TF]%}${workspace}%{$reset_color%} "
+    fi
   fi
 }
 
