@@ -38,3 +38,7 @@ source ~/.config/zsh/zsh-mcfly
 source ~/.config/zsh/zsh-vault
 # zsh-autosuggestions
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# zsh-autosuggestions custom config
+source ~/.config/zsh/zsh-autosuggestions
+# zsh-syntax-highlighting
+source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
