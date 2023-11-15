@@ -23,3 +23,4 @@ yabai -m rule --add label="Software Update" title="Software Update" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
 yabai -m rule --add app="^Bitwarden$" manage=off
 yabai -m rule --add app="Microsoft Teams$" manage=off
+yabai -m rule --add app="Microsoft Teams classic$" manage=off
