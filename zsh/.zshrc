@@ -34,3 +34,5 @@ source ~/.config/zsh/zsh-prompt
 source ~/.config/zsh/zsh-cursor
 # McFly - Replaces ctrl-r history search
 source ~/.config/zsh/zsh-mcfly
+# Vault
+source ~/.config/zsh/zsh-vault

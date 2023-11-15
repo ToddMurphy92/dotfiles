@@ -1,0 +1,7 @@
+function vprd() {
+  source vault-exports.json
+  export VAULT_ADDR=$VAULT_ADDR
+  export VAULT_SSH_PATH=$VAULT_SSH_PATH
+  export VAULT_SSH_PUBLIC_KEY=$VAULT_SSH_PUBLIC_KEY
+  export VAULT_SSH_ROLE=$VAULT_SSH_ROLE
+}
