@@ -36,3 +36,5 @@ source ~/.config/zsh/zsh-cursor
 source ~/.config/zsh/zsh-mcfly
 # Vault
 source ~/.config/zsh/zsh-vault
+# zsh-autosuggestions
+source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
