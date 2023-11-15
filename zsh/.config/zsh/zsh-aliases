@@ -42,3 +42,6 @@ alias dpsg='docker ps | grep'
 
 # Terraform
 alias tf='terraform'
+
+# Ansiweather
+alias bom='ansiweather -a false -l Brisbane,AU'
