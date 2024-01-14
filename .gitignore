@@ -11,3 +11,6 @@ nvim/.config/nvim/test.sh
 
 # zsh
 zsh/.config/zsh/vault-exports.json
+
+# nixos
+result
