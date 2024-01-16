@@ -8,7 +8,8 @@ alias alup='aws lambda update-function-code \
 	--function-name'
 
 # Editor
-alias nv=nvim
+alias nv=nvim # My nvim config
+alias lvim='NVIM_APPNAME=nvim-lunarvim nvim' # Lunarvim distro
 
 # List files
 alias ls='ls --color=auto'
