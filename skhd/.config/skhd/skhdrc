@@ -4,7 +4,7 @@
 # `skhd --reload`
 
 # App bindings
-hyper - k : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
+# hyper - k : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
 
 #############
 ### YABAI ###
