@@ -16,14 +16,16 @@ bindkey -v
 zstyle :compinstall filename '/home/todd/.zshrc'
 
 # Initialize zsh completion system
-autoload -Uz compinit
-compinit
+# autoload -Uz compinit
+# compinit
 # End of lines added by compinstall
 ###############################################
 # Plugin example
 # source ~/.configs/zsh/plugins/pluginfilename
 
 # Sources
+# # zsh-autocomplete - is supposed to be loaded before calls to compdef
+source ~/.config/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # Alias List
 source ~/.config/zsh/zsh-aliases
 # Exports
@@ -36,3 +38,9 @@ source ~/.config/zsh/zsh-cursor
 source ~/.config/zsh/zsh-mcfly
 # Vault
 source ~/.config/zsh/zsh-vault
+# # zsh-autosuggestions
+# source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# # zsh-autosuggestions custom config
+# source ~/.config/zsh/zsh-autosuggestions
+# zsh-syntax-highlighting
+source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
