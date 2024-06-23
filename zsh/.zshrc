@@ -44,3 +44,8 @@ source ~/.config/zsh/zsh-vault
 # source ~/.config/zsh/zsh-autosuggestions
 # zsh-syntax-highlighting
 source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+if [ -f /opt/homebrew/bin/kubectl ]; then
+  source <(kubectl completion zsh)
+fi
+
