@@ -49,3 +49,7 @@ if [ -f /opt/homebrew/bin/kubectl ]; then
   source <(kubectl completion zsh)
 fi
 
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
