@@ -1,6 +1,6 @@
 # Some inspiration from here: https://github.com/julian-heng/yabai-config/blob/master/yabairc
 # Layout type
-yabai -m config layout bsp
+yabai -m config layout float
 
 # Float Windows
 #yabai -m rule --add app=Finder manage=off
