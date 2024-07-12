@@ -1,3 +1,4 @@
+source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 autoload colors
 colors
 ###############################################
@@ -25,7 +26,7 @@ zstyle :compinstall filename '/home/todd/.zshrc'
 
 # Sources
 # # zsh-autocomplete - is supposed to be loaded before calls to compdef
-source ~/.config/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+#source ~/.config/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # Alias List
 source ~/.config/zsh/zsh-aliases
 # Exports
@@ -43,7 +44,7 @@ source ~/.config/zsh/zsh-vault
 # # zsh-autosuggestions custom config
 # source ~/.config/zsh/zsh-autosuggestions
 # zsh-syntax-highlighting
-source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 if [ -f /opt/homebrew/bin/kubectl ]; then
   source <(kubectl completion zsh)
@@ -53,3 +54,4 @@ fi
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh)"
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
