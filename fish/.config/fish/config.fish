@@ -3,4 +3,5 @@ if status is-interactive
     # Enable atuin
     atuin init fish | source
     # oh-my-posh init fish --config $(brew --prefix oh-my-posh)/themes/catppuccin_mocha.omp.json | source
+    oh-my-posh init fish --config ~/dotfiles/ohmyposh/catppuccin_mocha_devops.omp.json | source
 end
