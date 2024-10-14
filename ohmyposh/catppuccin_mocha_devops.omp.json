@@ -53,8 +53,14 @@
           "template": "\udb84\udc62 {{.WorkspaceName}} "
         },
         {
+          "type": "text",
           "style": "plain",
-          "foreground": "p:closer",
+          "foreground": "#b4befe",
+          "template": "{{.Env.VAULT_ADDR}} "
+        },
+        {
+          "style": "plain",
+          "foreground": "#cba6f7",
           "template": "\uf105",
           "type": "text"
         }
