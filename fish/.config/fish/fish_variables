@@ -1,5 +1,10 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export TEST:testing
+SETUVAR --export VAULT_ADDR:https\x3a//vault\x2eaws\x2esuperretailgroup\x2ecom/
+SETUVAR --export --path VAULT_SSH_PATH:ssh\x2dkey\x2dsigner
+SETUVAR --export VAULT_SSH_PUBLIC_KEY:/Users/243392/\x2essh/id_ed25519\x2epub
+SETUVAR --export VAULT_SSH_ROLE:wildcard_modern_role
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:555
 SETUVAR fish_color_cancel:\x2d\x2dreverse
