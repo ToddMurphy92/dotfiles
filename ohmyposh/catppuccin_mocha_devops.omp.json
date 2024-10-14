@@ -56,7 +56,7 @@
           "type": "text",
           "style": "plain",
           "foreground": "#b4befe",
-          "template": "{{.Env.VAULT_ADDR}} "
+          "template": "{{.Env.VAULT_ENV}} "
         },
         {
           "style": "plain",
