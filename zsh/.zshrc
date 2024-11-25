@@ -55,3 +55,4 @@ fi
 
 eval "$(atuin init zsh)"
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+. "/Users/todd/.deno/env"
