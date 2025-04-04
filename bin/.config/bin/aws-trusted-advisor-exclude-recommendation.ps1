@@ -35,7 +35,6 @@ if ($RecommendationResourceList.Count -eq 0 -or $RecommendationResourceList.Coun
 
 # Recommendation to be excluded
 Write-Output "Recommendations to be excluded:"
-Write-Output ""
 $RecommendationResourceList | ForEach-Object {  
   Write-Output $_
 }
