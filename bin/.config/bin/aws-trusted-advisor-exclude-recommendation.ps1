@@ -27,6 +27,12 @@ foreach ($Recommendation in $RecommendationList) {
 #$RecommendationResourceList = Get-TARecommendationResourceList -RecommendationIdentifier $RecommendationList.Arn | Where-Object { $_.Status -eq "Error" }  
 Write-Output "Recommendation Resource List: $($RecommendationResourceList.Count)"
 
+# Exit if there are no recommendations
+if ($RecommendationResourceList.Count -eq 0 -or $RecommendationResourceList.Count -eq $null) {
+  Write-Output "No recommendations found to exclude."
+  exit
+}
+
 # Recommendation to be excluded
 Write-Output "Recommendations to be excluded:"
 Write-Output ""
