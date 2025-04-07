@@ -14,6 +14,7 @@ Write-Output "Length of Recommendation List: $($RecommendationList.Count)"
 
 # Print the recommendations list
 Write-Output "Recommendations: $($RecommendationList)"
+Write-Output $RecommendationList
 
 $RecommendationResourceList = @()
 foreach ($Recommendation in $RecommendationList) {
