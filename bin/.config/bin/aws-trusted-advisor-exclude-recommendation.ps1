@@ -5,9 +5,21 @@ param (
   [string]$Name
 )
 
-$RecommendationList = Get-TARecommendationList | Where-Object { $_.Name -like "*$Name*" }
-# Example: 
-#$RecommendationList         = Get-TARecommendationList | ? { $_.Name -like "*public IPv4*"}  
+Function Get-SRGTARs {
+  param(
+    [Parameter(Mandatory)]
+    [String]$Name
+  )
+  $Tars = [Collections.ArrayList]::new()
+  $Tars.Add($(Get-TARecommendationList -Select *)) | Out-Null
+  While($null -ne ($Tars | Select-Object -Last 1).NextToken){
+    $Tars.Add($(Get-TARecommendationList -NextToken $Tars.NextToken -Select *)) | Out-Null
+  }
+  return $Tars.RecommendationSummaries | Where-Object -Property Name -Like "*$Name*"
+}
+
+# Get the list of recommendations
+$RecommendationList = Get-SRGTARs -Name $Name
 
 # Check the length of the recommendation list
 Write-Output "Length of Recommendation List: $($RecommendationList.Count)"
@@ -44,7 +56,7 @@ $RecommendationResourceList | ForEach-Object {
 Write-Host "Are you sure you want to exclude the following recommendations? (Y/N)"
 $response = Read-Host
 
-if ($response -ne 'Y' -and $response -ne 'y') {
+if ($response -ne 'y') {
   Write-Output "Operation cancelled."
   exit
 }
