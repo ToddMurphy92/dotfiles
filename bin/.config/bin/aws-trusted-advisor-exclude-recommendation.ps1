@@ -13,7 +13,7 @@ Function Get-SRGTARs {
   $Tars = [Collections.ArrayList]::new()
   $Tars.Add($(Get-TARecommendationList -Select *)) | Out-Null
   While($null -ne ($Tars | Select-Object -Last 1).NextToken){
-    $Tars.Add($(Get-TARecommendationList -NextToken $Tars.NextToken -Select *)) | Out-Null
+    $Tars.Add($(Get-TARecommendationList -NextToken ($Tars | Select-Object -Last 1).NextToken -Select *)) | Out-Null
   }
   return $Tars.RecommendationSummaries | Where-Object -Property Name -Like "*$Name*"
 }
