@@ -10,5 +10,6 @@ return {
       yaml = true,
       help = true,
     },
+    model = "gpt-4.1",
   },
 }
