@@ -53,7 +53,7 @@ require('lazy').setup({
   },
 
   -- Theme
-  'rose-pine/neovim',
+  'catppuccin/nvim',
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.

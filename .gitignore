@@ -12,5 +12,8 @@ nvim/.config/nvim/test.sh
 # zsh
 zsh/.config/zsh/vault-exports.json
 
+# fish
+fish/.config/fish/fish_variables
+
 # nixos
 result

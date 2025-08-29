@@ -4,8 +4,8 @@ return {
   priority = 1000,
 
   require("catppuccin").setup({
-    flavour = "frappe", -- latte, frappe, macchiato, mocha
-    background = {      -- :h background
+    flavour = "auto", -- latte, frappe, macchiato, mocha
+    background = {    -- :h background
       light = "latte",
       dark = "mocha",
     },

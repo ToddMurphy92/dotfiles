@@ -1,7 +1,7 @@
 function vprd() {
-  source vault-exports.json
-  export VAULT_ADDR=$VAULT_ADDR
-  export VAULT_SSH_PATH=$VAULT_SSH_PATH
-  export VAULT_SSH_PUBLIC_KEY=$VAULT_SSH_PUBLIC_KEY
-  export VAULT_SSH_ROLE=$VAULT_SSH_ROLE
+  export VAULT_ADDR=https://vault.aws.superretailgroup.com/
+  export VAULT_SSH_PATH=ssh-key-signer
+  export VAULT_SSH_PUBLIC_KEY=~/.ssh/id_ed25519.pub
+  export VAULT_SSH_ROLE=wildcard_modern_role
 }
+
