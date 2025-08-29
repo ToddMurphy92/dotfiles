@@ -1,0 +1,4 @@
+#!/bin/sh
+# exec /Applications/Safari.app "$@"
+# open '/Applications/Microsoft Edge.app/' --args "$@"
+'/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge' "$@"

@@ -3,12 +3,13 @@ return {
   cmd = "Copilot",
   build = ":Copilot auth",
   opts = {
-    suggestion = { enabled = true },
+    suggestion = { enabled = false },
     panel = { enabled = false },
     filetypes = {
       markdown = true,
       yaml = true,
       help = true,
     },
+    model = "gpt-4.1",
   },
 }

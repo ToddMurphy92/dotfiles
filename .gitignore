@@ -11,4 +11,6 @@ nvim/.config/nvim/test.sh
 
 # zsh
 zsh/.config/zsh/vault-exports.json
-*.swp
+
+# fish
+fish/.config/fish/fish_variables
