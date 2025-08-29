@@ -14,3 +14,6 @@ zsh/.config/zsh/vault-exports.json
 
 # fish
 fish/.config/fish/fish_variables
+
+# nixos
+result
