@@ -1,6 +1,7 @@
 fish_add_path /opt/homebrew/bin/
 fish_add_path ~/.local/bin/
 if status is-interactive
+    set --global fish_key_bindings fish_vi_key_bindings
     # Commands to run in interactive sessions can go here
     # Enable atuin
     atuin init fish | source
